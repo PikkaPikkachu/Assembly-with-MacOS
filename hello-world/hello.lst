@@ -1,0 +1,19 @@
+     1                                  SECTION .data     ; data section
+     2 00000000 48656C6C6F20576F72-     msg:  db "Hello World",10  ; the string to print, 10=cr
+     3 00000009 6C640A             
+     4                                  len:  equ $-msg      ; "$" means "here"
+     5                                              ; len is a value, not an address
+     6                                  
+     7                                     SECTION .text     ; code section
+     8                                          global main     ; make label available to linker 
+     9                                  main:          ; standard  gcc  entry point
+    10                                     
+    11 00000000 BA0C000000                 mov   edx,len     ; arg3, length of string to print
+    12 00000005 B9[00000000]               mov   ecx,msg     ; arg2, pointer to string
+    13 0000000A BB01000000                 mov   ebx,1    ; arg1, where to write, screen
+    14 0000000F B804000000                 mov   eax,4    ; write sysout command to int 80 hex
+    15 00000014 CD80                       int   0x80     ; interrupt 80 hex, call kernel
+    16                                     
+    17 00000016 BB00000000                 mov   ebx,0    ; exit code, 0=normal
+    18 0000001B B801000000                 mov   eax,1    ; exit command to kernel
+    19 00000020 CD80                       int   0x80     ; interrupt 80 hex, call kernel
