@@ -20,5 +20,5 @@ Get started with [Hello World](https://github.com/PikkaPikkachu/Assembly-with-Ma
 
 ## Contributions
 
-Open to contributions of other programs as well! Just create an issue or send a PR. 
+Open to [contributions](https://github.com/PikkaPikkachu/Assembly-with-MacOS/blob/master/CONTRIBUTING.md) of other programs as well!
 
