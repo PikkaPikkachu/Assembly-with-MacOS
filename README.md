@@ -21,6 +21,8 @@ Now cd into any program and run it with the specified intruction at the end of c
 git clone https://github.com/PikkaPikkachu/Assembly-with-MacOS
 cd Assembly-with-MacOS
 ```
+### Running the programs 
+
 ### 1. Run on Masm using Dosbox 
 
 To run programs in dosbox
@@ -41,7 +43,7 @@ masm <fileName.asm>
 
 link <fileName.obj>
 
-fileName.exe
+<fileName.exe>
 
 ```
 
