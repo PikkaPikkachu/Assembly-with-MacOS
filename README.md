@@ -7,7 +7,7 @@ A collection of assembly programs specifically with MacOS system calls and nasm 
 
 ### MacOS
 
-```
+```bash
 brew install nasm
 git clone https://github.com/PikkaPikkachu/Assembly-with-MacOS
 cd Assembly-with-MacOS
@@ -17,24 +17,22 @@ Now cd into any program and run it with the specified intruction at the end of c
 
 ### Linux 
 
-```
+```bash
 git clone https://github.com/PikkaPikkachu/Assembly-with-MacOS
 cd Assembly-with-MacOS
 ```
-### Running the programs 
+#### Running the programs 
 
-### 1. Run on Masm using Dosbox 
+##### 1. Run on Masm using DOSbox 
 
-To run programs in dosbox
-
-To open Dosbox : Open Terminal, type and press enter 
-```
+Run the following command on terminal:
+```bash
 dosbox
 ```
 
-This should open the pre-installed dosbox. Now inside dosbox type
+This should open the pre-installed DOSBox. Run the following commands in the DOSBox terminal:
 
-```
+```bash
 mount c /path/to/directory/of/asm/file
 
 c:
@@ -49,12 +47,10 @@ link <fileName.obj>
 
 Currently the required `.exe` files have been added in the sub-directory itself which can be run directly.
 
-### 2. Run with emu8086 and Wine (faster and better)
+##### 2. Run with emu8086 and Wine (faster and better)
 
-To setup Wine : 
-```
-In a terminal session (CTRL+ALT+T). Simply type:
-
+To setup Wine, run on terminal: 
+```bash
 sudo apt-get update
 sudo apt-get install wine
 sudo apt-get install virtualbox
@@ -68,7 +64,7 @@ Install and get started by directly editing and running `.asm` files in the IDE.
 
 ## Tutorials
 
-Get started with [Hello World](https://github.com/PikkaPikkachu/Assembly-with-MacOS/blob/master/hello-world/hello.asm) program in 8086. 
+Get started with [Hello World](https://github.com/PikkaPikkachu/Assembly-with-MacOS/blob/master/MacOSX/hello-world/hello.asm) program in 8086. 
 
 ## Contributions
 
